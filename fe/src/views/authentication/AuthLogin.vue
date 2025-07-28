@@ -8,7 +8,13 @@ import * as yup from 'yup';
 const auth = useAuthStore();
 
 const validationSchema = yup.object({
-  email: yup.string().email('Invalid email').required('Valid email required'),
+  email: yup
+    .string()
+    .required('Email is required')
+    .matches(
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+      'Invalid email address'
+    ),
   password: yup.string().min(6, 'Minimum 6 characters').required('Password is required')
 });
 

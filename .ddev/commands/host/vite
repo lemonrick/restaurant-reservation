@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "▶️  Starting frontend (Vite)..."
+cd fe && yarn dev --mode ddev

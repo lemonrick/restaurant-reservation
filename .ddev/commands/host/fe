@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Run any command inside the "fe" folder using absolute path
+ddev exec --dir /var/www/html/fe "$@"

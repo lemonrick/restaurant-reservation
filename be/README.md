@@ -23,11 +23,19 @@ cp .env.example .env
 ```
 
 ```bash
+cp .env.testing.example .env.testing
+```
+
+```bash
 php artisan key:generate
 ```
 
 ```bash
-php artisan migrate:fresh --seed
+php artisan migrate:fresh
+```
+
+```bash
+php artisan db:seed
 ```
 
 ```bash

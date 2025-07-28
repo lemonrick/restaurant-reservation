@@ -19,7 +19,6 @@ import HomeWhyUs from '@/components/HomeWhyUs.vue';
   <HomeHeader />
 
   <main class="main">
-
     <HomeHero />
     <HomeAbout />
     <HomeWhyUs />

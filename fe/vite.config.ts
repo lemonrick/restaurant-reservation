@@ -5,6 +5,15 @@ import vuetify from 'vite-plugin-vuetify';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+    strictPort: true,
+    hmr: {
+      host: 'app.restaurant.ddev.site',
+    },
+    allowedHosts: ['app.restaurant.ddev.site'],
+  },
   plugins: [
     vue({
       template: {
